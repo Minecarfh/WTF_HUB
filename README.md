@@ -1,5 +1,3 @@
-
-
 -- Gui to Lua
 -- Version: 3.2
 
@@ -49,11 +47,14 @@ TextLabel_2.TextSize = 39.000
 
 -- Scripts:
 
-local function RIVAC_fake_script() -- Frame.LocalScript 
+local function SXBEIN_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
+
+	print("Hello world!")
+	
 end
-coroutine.wrap(RIVAC_fake_script)()
-local function HSMI_fake_script() -- Frame.LocalScript 
+coroutine.wrap(SXBEIN_fake_script)()
+local function TZUND_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	frame = script.Parent.Parent.Frame
@@ -61,25 +62,12 @@ local function HSMI_fake_script() -- Frame.LocalScript
 	frame.Selectable = true
 	frame.Active = true
 end
-coroutine.wrap(HSMI_fake_script)()
-local function LXQCPPD_fake_script() -- TextLabel_2.LocalScript 
+coroutine.wrap(TZUND_fake_script)()
+local function VZJRT_fake_script() -- TextLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	while wait() do
 		script.Parent.Text = game:GetService("Players").LocalPlayer.Data.Gold.Value 
 	end
 end
-coroutine.wrap(LXQCPPD_fake_script)()
-local function GWYPFT_fake_script() -- ScreenGui.LocalScript 
-	local script = Instance.new('LocalScript', ScreenGui)
-spawn(function ()
-	while wait() do
-		if _G.Gold_Value then
-			script.Parent.Frame.Visible = true
-		else
-			script.Parent.Frame.Visible = false
-		end
-	end
-end)
-end
-coroutine.wrap(GWYPFT_fake_script)()
+coroutine.wrap(VZJRT_fake_script)()
